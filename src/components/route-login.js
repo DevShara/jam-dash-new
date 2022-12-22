@@ -1,10 +1,20 @@
-import React from 'react'
+import React from 'react';
+import {navigate} from 'gatsby';
+import { useIdentityContext } from 'react-netlify-identity';
 
-const RouteLogin = () => (
+const RouteLogin = ({showModal}) => {
+    const identity = useIdentityContext();
+
+    if(identity && identity.isLoggedIn){
+        navigate('/dashboard/secret', { replace : true });
+    }
+
+    return (
     <>
     <p>Login</p>
-    <button>Log in</button>
+    <button onClick={showModal} >Log in</button>
     </>
-);
+    )
+}
 
 export default RouteLogin;
