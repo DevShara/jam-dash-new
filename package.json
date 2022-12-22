@@ -2,7 +2,7 @@
   "name": "jam-dash-new",
   "version": "1.0.0",
   "description": "",
-  "main": "gatsby-config.js",
+  "main": "index.js",
   "scripts": {
     "build": "gatsby build"
   },
