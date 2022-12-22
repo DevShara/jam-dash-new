@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && gatsby build"
+    "build": "gatsby build",
+    "develop": "gatsby develop"
   },
   "dependencies": {
     "@reach/dialog": "^0.3.0",
     "@reach/tabs": "^0.3.0",
     "@reach/visually-hidden": "^0.3.0",
     "gatsby": "^2.17.1",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-netlify-identity": "^0.1.9",
